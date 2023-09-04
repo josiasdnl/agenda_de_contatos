@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color:#323232
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.contatos {
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+header img {
+    margin-right: 16px;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+input {
+    display: block;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+}
+
+button {
+    color: #Ffffff;
+    background-color: #4c7b93;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: none;
+}
+
+form {
+    display: block;
+    padding-right: 64px;
+    border-right: 1px solid #929292;
+}
+
+table {
+    padding-left: 64px;
+}
