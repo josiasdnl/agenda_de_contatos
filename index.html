@@ -6,8 +6,8 @@
     <title>Agenda de Contatos</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -15,31 +15,38 @@
     <div class="container">
         <header>
             <img src="./imagens/agenda_de_contatos.png" alt="Agenda de contatos">
-            <h1>Meus Contatos</h1>
+            <h1>Minha Agenda</h1>
         </header>
         <div class="contatos">
-            <form>
+            <form id="novo-contato">
                 <h2>Criar novo contato</h2>
-                <input type="text" required placeholder="Nome">
-                <input type="tel" required placeholder="Telefone">
+                <input type="text" id="nome" required placeholder="Nome">
+                <input type="tel" id="telefone" required placeholder="Telefone">
                 <button type="submit">Salvar</button>
             </form>
-            <table>
-                <caption><h2>Contatos</h2></caption>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Telefone</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>João Silva</td>
-                        <td>99330-0228</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table">
+                <h2>Meus contatos</h2>
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--- Trecho escrito em JS utilizando input do usuário
+                        <tr>
+                            <td>João Silva</td>
+                            <td>99330-0228</td>
+                        </tr>
+                        ---> 
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
+
+    <script src="./main.js"></script>
+
 </body>
 </html>
